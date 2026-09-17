@@ -1,0 +1,21 @@
+{
+  "name": "agrimart-platform",
+  "version": "1.0.0",
+  "description": "Full-Stack Agriculture & Farming E-Commerce Web Application",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev:backend": "node backend/server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "agriculture",
+    "e-commerce",
+    "farming",
+    "seeds",
+    "fertilizers",
+    "kisan-bazaar"
+  ],
+  "author": "AgriMart",
+  "license": "ISC"
+}
