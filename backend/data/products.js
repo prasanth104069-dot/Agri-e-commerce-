@@ -1,5 +1,350 @@
 export const initialProducts = [
-  // SEEDS
+  // ==================== DAIRY PRODUCTS & CATTLE CARE ====================
+  {
+    id: "dairy-01",
+    name: "Pure Vedic A2 Gir Cow Bilona Cultured Ghee (Hand-Churned)",
+    hindiName: "शुद्ध वैदिक A2 गिर गाय बिलोना घी (मिट्टी के बर्तन में मंथित)",
+    category: "dairy",
+    subCategory: "Pure Desi Ghee",
+    brand: "GauAmrit Vedic Dairy",
+    price: 1650,
+    originalPrice: 2100,
+    unit: "1 Litre Glass Jar",
+    rating: 5.0,
+    reviewsCount: 340,
+    stock: 120,
+    isOrganic: true,
+    badge: "100% Vedic A2",
+    image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=600&q=80",
+    description: "Prepared from free-grazing indigenous Gir cows milk using the traditional 5-stage Vedic Bilona method (Curd to Makkhan to Ghee on slow woodfire). Rich in golden granules, natural Beta-Carotene, Omega 3-6-9, and Butyric acid.",
+    dosageGuide: "1-2 tablespoons daily in warm milk or over hot rotis / dal.",
+    suitableCrops: ["Daily Family Health", "Ayurvedic Nutrition", "Immunity Booster"],
+    features: [
+      "Made purely from A2 whole milk curd (Bilona hand-churned)",
+      "Free from hormones, oxytocin, preservatives, and GMOs",
+      "Traditional grainy texture (दानेदार) with rich Vedic aroma",
+      "Lab tested for 0% adulteration and 100% pure A2 beta-casein"
+    ],
+    manufacturerInfo: {
+      name: "GauAmrit Vedic Dairy Farms Collective",
+      license: "FSSAI-1152104000088",
+      origin: "Gir Somnath, Gujarat"
+    }
+  },
+  {
+    id: "dairy-02",
+    name: "Farm-Fresh Organic Malai Paneer (Vacuum Sealed, Zero Preservatives)",
+    hindiName: "खेत-ताजा जैविक मलाई पनीर (100% शुद्ध मलाईदार)",
+    category: "dairy",
+    subCategory: "Fresh Dairy",
+    brand: "GauAmrit Vedic Dairy",
+    price: 240,
+    originalPrice: 320,
+    unit: "500g Vacuum Pack",
+    rating: 4.9,
+    reviewsCount: 180,
+    stock: 90,
+    isOrganic: true,
+    badge: "Farm Fresh",
+    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+    description: "Ultra-soft melt-in-mouth cottage cheese (Paneer) crafted purely from single-origin farm whole milk. High protein (20g per 100g) with zero chemical stabilizers or starch.",
+    dosageGuide: "Store refrigerated below 4°C. Consume within 7 days of opening.",
+    suitableCrops: ["Daily Protein Nutrition", "Culinary Use"],
+    features: [
+      "Made fresh every morning within 3 hours of milking",
+      "Vacuum packed under sterile hygienic nitrogen flush",
+      "Ultra-soft texture that absorbs gravies perfectly",
+      "Zero added palm oil or artificial coagulants"
+    ],
+    manufacturerInfo: {
+      name: "GauAmrit Micro Dairy Plant",
+      license: "FSSAI-1152104000089",
+      origin: "Indore Dairy Hub, MP"
+    }
+  },
+  {
+    id: "dairy-03",
+    name: "Traditional Cultured Desi White Butter (Makhan / Loni)",
+    hindiName: "पारंपरिक देसी सफेद मक्खन (ताजा लोणी)",
+    category: "dairy",
+    subCategory: "Fresh Butter",
+    brand: "Kisan Dairy Co-op",
+    price: 310,
+    originalPrice: 390,
+    unit: "500g Eco-Pack",
+    rating: 4.9,
+    reviewsCount: 145,
+    stock: 75,
+    isOrganic: true,
+    badge: "Hand Churned",
+    image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=600&q=80",
+    description: "Unsalted pure white butter obtained by churning slow-fermented whole milk curd. Contains natural milk probiotics, Vitamin A, and beneficial fatty acids.",
+    dosageGuide: "Perfect topping on hot parathas, thalipeeth, and bajra rotis.",
+    suitableCrops: ["Home Kitchens", "Breakfasts"],
+    features: [
+      "100% Unsalted natural cultured white butter",
+      "Rich in natural probiotics for gut wellness",
+      "Zero artificial colors or preservatives",
+      "Daily fresh churn batch delivery"
+    ],
+    manufacturerInfo: {
+      name: "Malwa Cooperative Dairy Federation",
+      license: "FSSAI-1141985000012",
+      origin: "Dewas, Madhya Pradesh"
+    }
+  },
+  {
+    id: "dairy-04",
+    name: "Automatic 25-Litre Single Bucket Electric Cow Milking Machine",
+    hindiName: "ऑटोमैटिक 25L स्टेनलेस स्टील गाय दुहने की मशीन",
+    category: "dairy",
+    subCategory: "Dairy Machinery",
+    brand: "AgroDairy Tech",
+    price: 18500,
+    originalPrice: 24900,
+    unit: "1 Complete Machine Kit",
+    rating: 4.9,
+    reviewsCount: 88,
+    stock: 25,
+    isOrganic: false,
+    badge: "Farmer Special",
+    image: "https://images.unsplash.com/photo-1527153857715-3908f2ae5e81?auto=format&fit=crop&w=600&q=80",
+    description: "Commercial grade 0.75 HP oil-lubricated vacuum pump milking machine with food-grade SS 304 bucket (25 Litre). Milks 1 cow in 4-5 minutes with natural pulsating action (60 pulsations/min) simulating gentle calf sucking.",
+    dosageGuide: "Milks 10-12 cows or buffaloes per hour with single operator.",
+    suitableCrops: ["Dairy Farms", "Goushalas", "Cattle Sheds"],
+    features: [
+      "Food-grade silicone liners gentle on cow teats prevents mastitis",
+      "Stainless steel 304 sanitary grade bucket (25L)",
+      "High vacuum stability with precision pressure regulator",
+      "2-Year Motor Warranty with all-India doorstep technician support"
+    ],
+    manufacturerInfo: {
+      name: "AgroDairy Automation Systems",
+      license: "ISO-DAIRY-9001-2022",
+      origin: "Ludhiana, Punjab"
+    }
+  },
+  {
+    id: "dairy-05",
+    name: "Cattle Mineral Mixture Ultra (Chelated Zinc, Selenium & Vitamin H)",
+    hindiName: "पशु आहार चिलेटेड मिनरल मिक्सचर (विटामिन H व सेलेनियम युक्त)",
+    category: "dairy",
+    subCategory: "Animal Nutrition",
+    brand: "VetCare Animal Health",
+    price: 690,
+    originalPrice: 890,
+    unit: "5 kg Bucket",
+    rating: 4.8,
+    reviewsCount: 210,
+    stock: 160,
+    isOrganic: false,
+    badge: "Best Seller",
+    image: "https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80",
+    description: "Specially formulated enriched mineral feed supplement with chelated Zinc, Copper, Cobalt, Iodine, Chromium, Vitamin A, D3, E, and Vitamin H (Biotin) to enhance conception rates and increase milk fat & SNF.",
+    dosageGuide: "50 grams daily mixed with morning cattle feed or wheat bran.",
+    suitableCrops: ["Dairy Cows", "Buffaloes", "Breeding Cattle"],
+    features: [
+      "Chelated trace minerals for 90%+ bio-absorption",
+      "Prevents repeat breeding and improves herd fertility",
+      "Increases daily milk yield by 1 to 2 litres",
+      "Enhances udder immunity against sub-clinical mastitis"
+    ],
+    manufacturerInfo: {
+      name: "VetCare Animal Health Labs",
+      license: "BIS-VET-MIX-409",
+      origin: "Hyderabad, Telangana"
+    }
+  },
+  {
+    id: "dairy-06",
+    name: "Fermented Sweet Corn Green Fodder Silage Bale (Probiotic Enriched)",
+    hindiName: "फर्मेंटेड मक्का हरा चारा साइलेज गांठ (100 किग्रा)",
+    category: "dairy",
+    subCategory: "Cattle Fodder",
+    brand: "Kisan Silage Co.",
+    price: 850,
+    originalPrice: 1100,
+    unit: "100 kg Packed Bale",
+    rating: 4.9,
+    reviewsCount: 160,
+    stock: 200,
+    isOrganic: true,
+    badge: "High Energy",
+    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=600&q=80",
+    description: "High-protein green corn fodder harvested at the milk-dough stage, chopped, inoculated with Lactobacillus cultures, and hydraulically compressed under 100% anaerobic film. Solves green fodder scarcity all year round.",
+    dosageGuide: "Feed 15-20 kg per cow/buffalo daily along with dry roughage.",
+    suitableCrops: ["Milking Dairy Cattle", "Goats", "Sheep"],
+    features: [
+      "Rich in natural lactic acid, digestible starches, and fiber",
+      "Maintains constant milk production during dry summer months",
+      "Airtight multi-layer UV protected film lasts 18 months without spoilage",
+      "Palatable sweet aroma that cattle consume with zero wastage"
+    ],
+    manufacturerInfo: {
+      name: "Kisan Fodder & Silage Technologies",
+      license: "AGRI-SILAGE-2023",
+      origin: "Nashik, Maharashtra"
+    }
+  },
+
+  // ==================== AGRI HARVEST & DIRECT FARM PRODUCE ====================
+  {
+    id: "agri-01",
+    name: "Cold-Pressed Wood Churned Pure Yellow Mustard Oil (Kachi Ghani)",
+    hindiName: "लकड़ी की घानी का शुद्ध पीली सरसों का तेल (कच्ची घानी)",
+    category: "produce",
+    subCategory: "Cold Pressed Oils",
+    brand: "Gramin Pure Harvest",
+    price: 1050,
+    originalPrice: 1350,
+    unit: "5 Litre Food-Grade Tin",
+    rating: 5.0,
+    reviewsCount: 290,
+    stock: 140,
+    isOrganic: true,
+    badge: "Wood Pressed",
+    image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+    description: "Extracted in traditional wooden Kolhu (लकड़ी की घानी) at slow speeds (<35°C) to keep natural pungent allylisothiocyanate aroma, vitamins A & E, and healthy Omega-3 fatty acids intact.",
+    dosageGuide: "For daily cooking, deep frying, pickles, and body massage.",
+    suitableCrops: ["Daily Health Cooking", "Pickles & Preservation"],
+    features: [
+      "Zero heat extraction preserves 100% natural micro-nutrients",
+      "Zero chemical solvent extraction, zero added argemone",
+      "High smoke point ideal for traditional Indian cooking",
+      "Packed in food-grade recyclable tin to protect against light oxidation"
+    ],
+    manufacturerInfo: {
+      name: "Gramin Organic Oil Millers Collective",
+      license: "FSSAI-1222002500011",
+      origin: "Bharatpur, Rajasthan"
+    }
+  },
+  {
+    id: "agri-02",
+    name: "Direct Farmer Organic Royal 1121 Extra Long Basmati Rice",
+    hindiName: "सीधे किसान से - जैविक रॉयल 1121 बासमती चावल",
+    category: "produce",
+    subCategory: "Organic Grains",
+    brand: "Kisan Direct",
+    price: 890,
+    originalPrice: 1150,
+    unit: "10 kg Bag",
+    rating: 4.9,
+    reviewsCount: 380,
+    stock: 250,
+    isOrganic: true,
+    badge: "Direct Farmer",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    description: "Organically grown 2-year naturally aged 1121 Basmati Rice harvested directly by farmer cooperatives in the foothills of Himalayas. Cooks to 2.5x length with heavenly aroma.",
+    dosageGuide: "Soak for 30 minutes before cooking for maximum grain elongation.",
+    suitableCrops: ["Consumer Kitchens", "Hotels", "Festivals"],
+    features: [
+      "100% pesticide-free, unpolished natural whole grain",
+      "Aged naturally for 24 months to ensure non-sticky fluffy cooking",
+      "Direct farmer price - eliminating all intermediate middlemen",
+      "Vacuum packed to retain natural field freshness"
+    ],
+    manufacturerInfo: {
+      name: "Doon Valley Organic Farmers Collective",
+      license: "FSSAI-100200420001",
+      origin: "Dehradun, Uttarakhand"
+    }
+  },
+  {
+    id: "agri-03",
+    name: "Organic High-Curcumin Lakadong Turmeric Powder (7.5% Curcumin)",
+    hindiName: "जैविक लकाडोंग हल्दी पाउडर (7.5% उच्च करक्यूमिन)",
+    category: "produce",
+    subCategory: "Farm Spices",
+    brand: "Himalayan Herbs & Spices",
+    price: 360,
+    originalPrice: 480,
+    unit: "500g Zip Pouch",
+    rating: 4.9,
+    reviewsCount: 165,
+    stock: 130,
+    isOrganic: true,
+    badge: "High Curcumin",
+    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80",
+    description: "World famous Lakadong turmeric grown naturally in Meghalaya with unmatched 7.0 - 8.0% natural Curcumin content (standard turmeric contains only 2%). Supercharged anti-inflammatory and antioxidant potency.",
+    dosageGuide: "1/2 teaspoon daily in warm golden milk (Haldi Doodh) or culinary dishes.",
+    suitableCrops: ["Immunity", "Ayurvedic Health", "Cooking"],
+    features: [
+      "Verified 7.5% active Curcumin (Lab Certificate enclosed)",
+      "Zero lead chromate, zero artificial yellow dyes",
+      "Stone ground at low temperature to preserve essential oils",
+      "Directly sourced from indigenous women farming collectives"
+    ],
+    manufacturerInfo: {
+      name: "Jaintia Hills Organic Producer Co.",
+      license: "FSSAI-1182100100004",
+      origin: "Meghalaya, India"
+    }
+  },
+  {
+    id: "agri-04",
+    name: "Unpolished Organic Desi Brown Chana / Chickpeas (High Fiber)",
+    hindiName: "अनपॉलिश जैविक देसी चना (उच्च प्रोटीन व फाइबर)",
+    category: "produce",
+    subCategory: "Pulses & Legumes",
+    brand: "Kisan Direct",
+    price: 490,
+    originalPrice: 650,
+    unit: "5 kg Sack",
+    rating: 4.8,
+    reviewsCount: 190,
+    stock: 220,
+    isOrganic: true,
+    badge: "Unpolished",
+    image: "https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=600&q=80",
+    description: "Farm-fresh unpolished small-grain Desi Chana harvested from rain-fed organic fields in Madhya Pradesh. Extremely rich in plant protein, dietary fiber, and iron.",
+    dosageGuide: "Soak overnight for 8 hours for delicious curries, sprouts, or roasted chana.",
+    suitableCrops: ["Daily Health Protein", "Sprouting"],
+    features: [
+      "Zero water/oil polishing preserves the mineral-rich outer bran",
+      "High germination rate >95% (ideal for daily nutrient-dense sprouts)",
+      "Chemical fertilizer & pesticide-free crop",
+      "Naturally sun-dried for extended 12-month shelf life"
+    ],
+    manufacturerInfo: {
+      name: "Narmada Valley Farmers Cooperative",
+      license: "FSSAI-1142085000044",
+      origin: "Hoshangabad, MP"
+    }
+  },
+  {
+    id: "agri-05",
+    name: "Pure Raw Unprocessed Mustard & Multiflora Farm Honey",
+    hindiName: "शुद्ध कच्चा सरसों व वनफूल प्राकृतिक शहद",
+    category: "produce",
+    subCategory: "Farm Harvest",
+    brand: "Apiary Pure",
+    price: 450,
+    originalPrice: 600,
+    unit: "1 kg Glass Jar",
+    rating: 5.0,
+    reviewsCount: 215,
+    stock: 95,
+    isOrganic: true,
+    badge: "100% Raw",
+    image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
+    description: "Unpasteurized, unheated pure raw honey extracted directly from bee boxes placed in flowering mustard and wildflower fields. Loaded with active enzymes, pollen, and propolis.",
+    dosageGuide: "1-2 teaspoons daily with warm water or milk.",
+    suitableCrops: ["Immunity", "Daily Nutrition"],
+    features: [
+      "Zero added sugar, corn syrup, or artificial preservatives",
+      "Retains natural flower pollen and antioxidants",
+      "NMR tested for 100% purity and zero adulteration",
+      "Bottled fresh at the farm site"
+    ],
+    manufacturerInfo: {
+      name: "Sundarbans & Himalayan Beekeepers Cooperative",
+      license: "FSSAI-122180260004",
+      origin: "Himachal Pradesh, India"
+    }
+  },
+
+  // ==================== SEEDS & HYBRIDS ====================
   {
     id: "seed-01",
     name: "Golden Harvest Hybrid Paddy (Rice) Seeds - MTU 1010",
@@ -161,7 +506,7 @@ export const initialProducts = [
     }
   },
 
-  // FERTILIZERS & SOIL HEALTH
+  // ==================== FERTILIZERS & SOIL HEALTH ====================
   {
     id: "fert-01",
     name: "100% Organic Earthworm Vermicompost (Nutrient Dense)",
@@ -287,7 +632,7 @@ export const initialProducts = [
     }
   },
 
-  // CROP PROTECTION & PEST MANAGEMENT
+  // ==================== CROP PROTECTION & BIO-PESTICIDES ====================
   {
     id: "prot-01",
     name: "BioNeem 10,000 PPM Pure Azadirachtin Organic Insecticide",
@@ -382,7 +727,7 @@ export const initialProducts = [
     }
   },
 
-  // FARM TOOLS & EQUIPMENT
+  // ==================== FARM TOOLS & MACHINERY ====================
   {
     id: "tool-01",
     name: "16-Litre 2-in-1 Dual Battery + Manual Knapsack Agriculture Sprayer",
@@ -506,134 +851,6 @@ export const initialProducts = [
       license: "FLC-TOOL-903",
       origin: "Ludhiana, Punjab"
     }
-  },
-
-  // LIVESTOCK & DAIRY CARE
-  {
-    id: "live-01",
-    name: "Kapila Gold High Energy Cattle Feed Pellet (Bypass Protein Enriched)",
-    hindiName: "कपिला गोल्ड उच्च ऊर्जा पशु आहार पैलेट",
-    category: "livestock",
-    subCategory: "Cattle Feed",
-    brand: "Kapila Dairy",
-    price: 1350,
-    originalPrice: 1600,
-    unit: "50 kg Bag",
-    rating: 4.9,
-    reviewsCount: 290,
-    stock: 180,
-    isOrganic: true,
-    badge: "Milk Booster",
-    image: "https://images.unsplash.com/photo-1527153857715-3908f2ae5e81?auto=format&fit=crop&w=600&q=80",
-    description: "Scientifically balanced dairy cattle feed formulation containing 22% Crude Protein and 75% Total Digestible Nutrients (TDN). Increases milk yield by 1.5 - 2.5 Litres per day with enhanced SNF and fat percentage.",
-    dosageGuide: "Feed 400g per 1 litre of milk produced + 1.5 kg for body maintenance daily.",
-    suitableCrops: ["Dairy Cows", "Buffaloes", "Calves"],
-    features: [
-      "Enriched with protected amino acids, minerals, and live yeast cultures",
-      "Improves milk fat percentage (up to 0.5% - 0.8% increase)",
-      "Maintains animal reproduction health and reduces calving intervals",
-      "BIS Type-II Certified Animal Feed"
-    ],
-    manufacturerInfo: {
-      name: "Kapila Agro Industries Ltd",
-      license: "BIS-FEED-883",
-      origin: "Kanpur, Uttar Pradesh"
-    }
-  },
-  {
-    id: "live-02",
-    name: "Doodh-Dhara Chelated Liquid Calcium + Phosphorus + Vitamin D3 Tonic",
-    hindiName: "दूध धारा चिलेटेड लिक्विड कैल्शियम व विटामिन D3 टॉनिक",
-    category: "livestock",
-    subCategory: "Livestock Supplements",
-    brand: "VetCare Pharma",
-    price: 820,
-    originalPrice: 1050,
-    unit: "5 Litre Can",
-    rating: 4.8,
-    reviewsCount: 156,
-    stock: 110,
-    isOrganic: false,
-    badge: "Best Seller",
-    image: "https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=600&q=80",
-    description: "High potency liquid calcium supplement fortified with bio-available phosphorus, Vitamin D3, Vitamin B12, and herb galactagogues (Shatavari & Jivanti) to stimulate high milk flow and prevent milk fever.",
-    dosageGuide: "100 ml daily per cow/buffalo; 20-30 ml for sheep/goats.",
-    suitableCrops: ["Dairy Cattle", "Buffaloes", "Goats", "Sheep"],
-    features: [
-      "Supplies 3,500mg Calcium and 1,750mg Phosphorus per 100ml dose",
-      "Contains natural herbal extracts that stimulate natural milk let-down",
-      "Prevents hypocalcemia (milk fever) post-calving",
-      "Strengthens skeletal bone and improves overall herd stamina"
-    ],
-    manufacturerInfo: {
-      name: "VetCare Animal Health Laboratories",
-      license: "VET-DRUG-552",
-      origin: "Hyderabad, Telangana"
-    }
-  },
-
-  // FRESH DIRECT FARM PRODUCE
-  {
-    id: "farm-01",
-    name: "Direct Farmer Organic Royal 1121 Extra Long Basmati Rice",
-    hindiName: "सीधे किसान से - जैविक रॉयल 1121 बासमती चावल",
-    category: "produce",
-    subCategory: "Organic Grains",
-    brand: "Kisan Direct",
-    price: 890,
-    originalPrice: 1150,
-    unit: "10 kg Bag",
-    rating: 4.9,
-    reviewsCount: 380,
-    stock: 250,
-    isOrganic: true,
-    badge: "Direct Farmer",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
-    description: "Organically grown 2-year naturally aged 1121 Basmati Rice harvested directly by farmer cooperatives in the foothills of Himalayas. Cooks to 2.5x length with heavenly aroma.",
-    dosageGuide: "Soak for 30 minutes before cooking for maximum grain elongation.",
-    suitableCrops: ["Consumer Kitchens", "Hotels", "Festivals"],
-    features: [
-      "100% pesticide-free, unpolished natural whole grain",
-      "Aged naturally for 24 months to ensure non-sticky fluffy cooking",
-      "Direct farmer price - eliminating all intermediate middlemen",
-      "Vacuum packed to retain natural field freshness"
-    ],
-    manufacturerInfo: {
-      name: "Doon Valley Organic Farmers Collective",
-      license: "FSSAI-100200420001",
-      origin: "Dehradun, Uttarakhand"
-    }
-  },
-  {
-    id: "farm-02",
-    name: "Pure Raw Unprocessed Mustard & Multiflora Farm Honey",
-    hindiName: "शुद्ध कच्चा सरसों व वनफूल प्राकृतिक शहद",
-    category: "produce",
-    subCategory: "Farm Harvest",
-    brand: "Apiary Pure",
-    price: 450,
-    originalPrice: 600,
-    unit: "1 kg Glass Jar",
-    rating: 5.0,
-    reviewsCount: 215,
-    stock: 95,
-    isOrganic: true,
-    badge: "100% Raw",
-    image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
-    description: "Unpasteurized, unheated pure raw honey extracted directly from bee boxes placed in flowering mustard and wildflower fields. Loaded with active enzymes, pollen, and propolis.",
-    dosageGuide: "1-2 teaspoons daily with warm water or milk.",
-    suitableCrops: ["Immunity", "Daily Nutrition"],
-    features: [
-      "Zero added sugar, corn syrup, or artificial preservatives",
-      "Retains natural flower pollen and antioxidants",
-      "NMR tested for 100% purity and zero adulteration",
-      "Bottled fresh at the farm site"
-    ],
-    manufacturerInfo: {
-      name: "Sundarbans & Himalayan Beekeepers Cooperative",
-      license: "FSSAI-122180260004",
-      origin: "Himachal Pradesh, India"
-    }
   }
 ];
 
@@ -642,10 +859,28 @@ export const initialCategories = [
     id: "all",
     name: "All Products",
     hindiName: "सभी उत्पाद",
-    icon: "Grid",
-    itemCount: 18,
+    icon: "LayoutGrid",
+    itemCount: 23,
     color: "from-emerald-500 to-green-600",
     bgColor: "bg-emerald-50 text-emerald-700 border-emerald-200"
+  },
+  {
+    id: "dairy",
+    name: "Dairy & Cattle Care",
+    hindiName: "डेयरी उत्पाद व पशुपालन",
+    icon: "Milk",
+    itemCount: 6,
+    color: "from-blue-600 to-indigo-700",
+    bgColor: "bg-blue-50 text-blue-700 border-blue-200"
+  },
+  {
+    id: "produce",
+    name: "Farm Harvest & Produce",
+    hindiName: "किसान उपज व अनाज",
+    icon: "ShoppingBag",
+    itemCount: 5,
+    color: "from-teal-600 to-emerald-800",
+    bgColor: "bg-teal-50 text-teal-700 border-teal-200"
   },
   {
     id: "seeds",
@@ -680,25 +915,7 @@ export const initialCategories = [
     hindiName: "कृषि उपकरण व मशीनरी",
     icon: "Tractor",
     itemCount: 4,
-    color: "from-blue-600 to-cyan-700",
-    bgColor: "bg-blue-50 text-blue-700 border-blue-200"
-  },
-  {
-    id: "livestock",
-    name: "Livestock & Feed",
-    hindiName: "पशु आहार व स्वास्थ्य",
-    icon: "HeartHandshake",
-    itemCount: 2,
-    color: "from-orange-500 to-amber-700",
+    color: "from-orange-600 to-amber-700",
     bgColor: "bg-orange-50 text-orange-700 border-orange-200"
-  },
-  {
-    id: "produce",
-    name: "Direct Farmer Produce",
-    hindiName: "किसान उपज (सीधे खेत से)",
-    icon: "ShoppingBag",
-    itemCount: 2,
-    color: "from-teal-600 to-emerald-800",
-    bgColor: "bg-teal-50 text-teal-700 border-teal-200"
   }
 ];

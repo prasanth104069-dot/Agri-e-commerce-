@@ -7,17 +7,19 @@ import {
   ShieldAlert,
   Tractor,
   HeartHandshake,
-  ShoppingBag
+  ShoppingBag,
+  Milk
 } from 'lucide-react';
 
 const categoryIcons = {
   all: LayoutGrid,
+  dairy: Milk,
+  produce: ShoppingBag,
   seeds: Sprout,
   fertilizers: Sparkles,
   protection: ShieldAlert,
   machinery: Tractor,
-  livestock: HeartHandshake,
-  produce: ShoppingBag
+  livestock: HeartHandshake
 };
 
 export const CategoryFilterBar = ({
@@ -40,12 +42,12 @@ export const CategoryFilterBar = ({
         <div className="flex items-center justify-between gap-4">
           <div>
             <h2 className="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight">
-              {lang === 'hi' ? "कृषि उत्पाद एवं सामग्री" : "Agricultural Products & Inputs"}
+              {lang === 'hi' ? "कृषि व डेयरी उत्पाद (Direct from Farm)" : "Agri Inputs & Fresh Dairy Products"}
             </h2>
             <p className="text-xs sm:text-sm text-stone-500">
               {lang === 'hi'
-                ? `कुल ${productCount} उत्पाद उपलब्ध - प्रमाणित गुणवत्ता एवं सीधा किसान मूल्य`
-                : `Showing ${productCount} verified farming products with direct manufacturer & farmer rates`}
+                ? `कुल ${productCount} उत्पाद उपलब्ध - शुद्ध वैदिक A2 घी, पनीर, बीज, खाद व उपकरण`
+                : `Showing ${productCount} verified farming & pure dairy products with farm-gate purity`}
             </p>
           </div>
         </div>
